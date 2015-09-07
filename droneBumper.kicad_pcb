@@ -3,7 +3,7 @@
   (general
     (links 95)
     (no_connects 0)
-    (area 104.924999 79.924999 148.075001 130.075001)
+    (area 104.525 73.525 151.341666 130.075001)
     (thickness 1.6)
     (drawings 5)
     (tracks 618)
@@ -83,7 +83,7 @@
       (mirror false)
       (drillshape 0)
       (scaleselection 1)
-      (outputdirectory droneBumperVersion1-1Gerbers/))
+      (outputdirectory droneBumperVersion1-2Gerbers/))
   )
 
   (net 0 "")
