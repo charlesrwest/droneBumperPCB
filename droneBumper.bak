@@ -37,7 +37,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "noname.sch"
-Date "6 sep 2015"
+Date "7 sep 2015"
 Rev ""
 Comp ""
 Comment1 ""
@@ -557,8 +557,6 @@ Wire Wire Line
 Wire Wire Line
 	3550 500  3850 500 
 Wire Wire Line
-	3550 -900 3550 500 
-Wire Wire Line
 	4350 2250 4450 2250
 Connection ~ 4350 2000
 Wire Wire Line
@@ -848,12 +846,12 @@ NoConn ~ 5900 3650
 $Comp
 L +5V #PWR020
 U 1 1 55A9381A
-P 4600 -900
-F 0 "#PWR020" H 4600 -810 20  0001 C CNN
-F 1 "+5V" H 4600 -810 30  0000 C CNN
-F 2 "" H 4600 -900 60  0000 C CNN
-F 3 "" H 4600 -900 60  0000 C CNN
-	1    4600 -900
+P 3550 500
+F 0 "#PWR020" H 3550 590 20  0001 C CNN
+F 1 "+5V" H 3550 590 30  0000 C CNN
+F 2 "" H 3550 500 60  0000 C CNN
+F 3 "" H 3550 500 60  0000 C CNN
+	1    3550 500 
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1044,46 +1042,6 @@ F 3 "" H 9100 2000 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L MOSFET_N Q1
-U 1 1 55A93AF9
-P 4100 -800
-F 0 "Q1" H 4110 -630 60  0000 R CNN
-F 1 "IRF7820PBF" H 4110 -950 60  0000 R CNN
-F 2 "~" H 4100 -800 60  0000 C CNN
-F 3 "~" H 4100 -800 60  0000 C CNN
-	1    4100 -800
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	3550 -900 3900 -900
-Wire Wire Line
-	3550 -600 4100 -600
-Connection ~ 3550 -600
-$Comp
-L MOSFET_N Q2
-U 1 1 55A93DE4
-P 4700 -450
-F 0 "Q2" H 4710 -280 60  0000 R CNN
-F 1 "IRF7820PBF" H 4710 -600 60  0000 R CNN
-F 2 "~" H 4700 -450 60  0000 C CNN
-F 3 "~" H 4700 -450 60  0000 C CNN
-	1    4700 -450
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	5050 500  4600 500 
-Wire Wire Line
-	4600 500  4600 -250
-Wire Wire Line
-	4600 -150 4900 -150
-Wire Wire Line
-	4900 -150 4900 -450
-Connection ~ 4600 -150
-Wire Wire Line
-	4600 -650 4600 -900
-Wire Wire Line
-	4600 -900 4300 -900
-$Comp
 L +5V #PWR038
 U 1 1 55A940D6
 P 4350 750
@@ -1239,4 +1197,17 @@ F 3 "" H 6650 1700 60  0000 C CNN
 	1    6650 1700
 	1    0    0    -1  
 $EndComp
+$Comp
+L +5V #PWR?
+U 1 1 55EDA2CC
+P 4900 500
+F 0 "#PWR?" H 4900 590 20  0001 C CNN
+F 1 "+5V" H 4900 590 30  0000 C CNN
+F 2 "" H 4900 500 60  0000 C CNN
+F 3 "" H 4900 500 60  0000 C CNN
+	1    4900 500 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 500  4900 500 
 $EndSCHEMATC
