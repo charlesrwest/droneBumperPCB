@@ -1,0 +1,7 @@
+The solder masks need to be adjusted for most components.  In particular, there is one place where a trace that could cause a bunch of shorts for the MCU is uncovered.
+
+Push button footprints are wrong. 
+
+Need pullup resistor for NRST?  Says has internal pullup though. (NVM, seems to have right voltage as is).
+
+Make text bigger (.75 mm instead of .5).

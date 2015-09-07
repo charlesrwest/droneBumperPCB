@@ -1,0 +1,15 @@
+Pin 3 on the 3.3 volt power regulator needs to be connected to pin 1 on the power regulator (instead of the current pin 3 -> pin 5 connection).  This really should have been caught in the last round of testing, but it is possible that another error masked it (3.3v was recorded in the last tests). Check.
+
+Review of the STM32F072 eval board (schematics apparently available on site) revealed that the USB ID pin on the eval board is connected to ground with a 100 KOhm resistor.  This may be why the USB interface is not working.-> nope, soldered wrong wire.  Fix USB-minus to connect to PA11.  Check.
+
+Also, testing of my voltage protection circuit reveals that it is not doing a darn thing (I blame the back-EMF protection diodes).  For further designs, that mechanism should probably be reworked.
+
+Tx and Rx on USART are flipped, check other USART pins and update local input/output settings on MCU to catch this sort of error in the future.  Oddly, it looks like the original settings SHOULD be right, but are not. Check.
+
+Make pad for securing DF13 connectors bigger.  It is hard to get the cables out and I have already damaged one pad.
+
+Need to add resistor to limit current draw on LED (look at reccomended current/voltage drop and plan accordingly). Looks like 100 ohms.
+
+Need to add big capacitor on 5V rail (220 uf?).  SMD electrolytic looks like a good option.  This may need to be higher when many different rangers are firing at once, but it seems like a good starting value.  Make sure the lifetime is rated long enough (higher temp tolerance tends to lead to higher life, as life rating is at max rated temp). Check.
+
+Also need to update one of the capacitors since I ended up going with a different model since the other was not available on Mouser.  Leaving for now, need to look at BOM.  It is C0402X5R1A103M020BC that needs to be updated/replaced.
