@@ -1,4 +1,4 @@
-eeschema (25-Oct-2014 BZR 4029)-stable  >> Creation date: Thu 13 Aug 2015 01:35:07 PM EDT
+eeschema (25-Oct-2014 BZR 4029)-stable  >> Creation date: Wed 16 Sep 2015 01:45:44 PM EDT
 #Cmp ( order = Reference )
 | C1         C1005X5R1A105K050BB
 | C2         GRM155R71C104KA88D
@@ -10,6 +10,7 @@ eeschema (25-Oct-2014 BZR 4029)-stable  >> Creation date: Thu 13 Aug 2015 01:35:
 | C8         GRM155R71C104KA88D
 | C9         GRM155R71C104KA88D
 | C10        0402ZD475MAT2A
+| C11        UBC1E221MNS1GS
 | D1         720-LYQ396P1Q236
 | DF13-CON4-1 DF13-4      
 | DF13-CON4-2 DF13-4      
@@ -23,9 +24,8 @@ eeschema (25-Oct-2014 BZR 4029)-stable  >> Creation date: Thu 13 Aug 2015 01:35:
 | DF13-CON4-10 DF13-4      
 | DF13-CON6-1 DF13-6      
 | MCU1       STM32F072C8T6
-| Q1         IRF7820PBF  
-| Q2         IRF7820PBF  
 | R1         ERJ-2RKF1002X
+| R2         RR0510P-101-D
 | REG1       MIC5205-3.3YM5_TR
 | SW1        SW_PUSH     
 | SW2        PTS810 SJM 250 SMTR LFS
@@ -43,6 +43,7 @@ eeschema (25-Oct-2014 BZR 4029)-stable  >> Creation date: Thu 13 Aug 2015 01:35:
 | GRM155R71C104KA88D C8        
 | GRM155R71C104KA88D C9        
 | 0402ZD475MAT2A C10       
+| UBC1E221MNS1GS C11       
 | 720-LYQ396P1Q236 D1        
 | DF13-4       DF13-CON4-1
 | DF13-4       DF13-CON4-2
@@ -56,9 +57,8 @@ eeschema (25-Oct-2014 BZR 4029)-stable  >> Creation date: Thu 13 Aug 2015 01:35:
 | DF13-4       DF13-CON4-10
 | DF13-6       DF13-CON6-1
 | STM32F072C8T6 MCU1      
-| IRF7820PBF   Q1        
-| IRF7820PBF   Q2        
 | ERJ-2RKF1002X R1        
+| RR0510P-101-D R2        
 | MIC5205-3.3YM5_TR REG1      
 | SW_PUSH      SW1       
 | PTS810 SJM 250 SMTR LFS SW2       
